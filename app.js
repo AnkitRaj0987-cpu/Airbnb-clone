@@ -103,9 +103,7 @@ const validateReview = (req,res,next) => {
 // })
 
 
-app.use("/",(req,res)=> {
-    res.redirect("/listings");
-});
+
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
