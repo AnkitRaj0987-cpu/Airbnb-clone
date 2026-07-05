@@ -48,7 +48,6 @@ store.on("error", () => {
     console.log("session store error");
 });
 
-
 const sessionOptions = {
    store,
     secret: process.env.SECRET,
@@ -94,13 +93,7 @@ const validateReview = (req,res,next) => {
     }
 };
 
-// app.get("/demouser",async (req,res)=>{
-//     let fakeUser = new User({email:"demo@example.com",
-//         username:"delta-student",
-//     });
-//     let registeredUser = await User.register(fakeUser,"helloworld");
-//     res.send(registeredUser);
-// })
+
 
 
 
